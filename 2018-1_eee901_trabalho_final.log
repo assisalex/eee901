@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.16)  5 JUL 2018 07:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.16)  5 JUL 2018 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -311,7 +311,10 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.05249> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 382.
 
-(./2018-1_eee901_trabalho_final.bbl)
+(./2018-1_eee901_trabalho_final.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -326,25 +329,24 @@ Before submitting the final camera ready copy, remember to:
 [1{/usr/local/texlive/2018basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-
 ]
 (./2018-1_eee901_trabalho_final.aux) )
 (\end occurred when \iftrue on line 437 was incomplete) 
 Here is how much of TeX's memory you used:
- 3292 strings out of 494091
- 50376 string characters out of 6163523
+ 3293 strings out of 494091
+ 50385 string characters out of 6163523
  115643 words of memory out of 5000000
- 6936 multiletter control sequences out of 15000+600000
+ 6937 multiletter control sequences out of 15000+600000
  36236 words of font info for 66 fonts, out of 8000000 for 9000
  322 hyphenation exceptions out of 8191
- 41i,10n,27p,499b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,27p,501b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018
 basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018basic/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018basic/texmf-dis
 t/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018basic/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on 2018-1_eee901_trabalho_final.pdf (1 page, 51222 bytes).
+Output written on 2018-1_eee901_trabalho_final.pdf (1 page, 52513 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  17 compressed objects within 1 object stream

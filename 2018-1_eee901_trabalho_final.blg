@@ -11,13 +11,13 @@ Database file #1: referencias.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in GEUN2008
-Warning--empty year in GEUN2008
+Warning--empty journal in GEUN:2008
+Warning--empty year in GEUN:2008
 
 Done.
 You've used 1 entry,
             4087 wiz_defined-function locations,
-            825 strings with 7479 characters,
+            825 strings with 7481 characters,
 and the built_in function-call counts, 435 in all, are:
 = -- 19
 > -- 9

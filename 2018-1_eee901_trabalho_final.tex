@@ -404,9 +404,23 @@ Email: alancsouza04@gmail.com, assis.alex.d@gmail.com, tatudoug@gmail.com, rofes
 
 \section{Introdu\c{c}\~{a}o}
 % no \IEEEPARstart 
-A eleva\c{c}\~ao da press\~ao arterial \'e um dos fatores de risco para as doen\c{c}as cardiovasculares que \'e a principal causa de morte mundial. A falta de informa\c{c}\~ao e assist\^encia para identificar as altera\c{c}\~oes na press\~ao arterial impede o diagn\'ostico precose dos fatores de risco. \'E relatado que metade os casos de morte por hipertens\~ao poderia ser revertido atrav\'es de tratamento com antihipertensivos, quando a prescri\c{c}\~ao \'e precose. \cite{KISHORE:2008}
+A eleva\c{c}\~ao da press\~ao arterial (PA) \'e um dos fatores de risco para as doen\c{c}as cardiovasculares que \'e a principal causa de morte mundial. A falta de informa\c{c}\~ao e assist\^encia para identificar as altera\c{c}\~oes da press\~ao arterial impede o diagn\'ostico dos fatores de risco e o in\'icio do tratamento. \'E relatado que metade dos casos de morte por hipertens\~ao poderia ser revertido atrav\'es de tratamento com antihipertensivos, quando identificada precosemente. \cite{KISHORE:2008}
 
-A medi\c{c}\~ao da press\~ao arterial, sist\'olica e diast\'olica, \'e avaliada mecanicamente pela diferen\c{c}a de press\~ao entre um agente externo (o manguito apertando o bra\c{c}o) e a press\~ao dos vaso sangu\'ineos, desta forma \'e feita uma estimativa pela compara\c{c}\~ao das press\~oes. Uma alternativa para medi\c{c}\~ao da press\~ao \'e usar um dispositivo n\~ao invasivo como a fotoplestimografia (PPG) que pode acessar o batimento card\'iaco distal (forma do sinal com a medida dos capilares do dedo) pela difere\c{c}a de absor\c{c}\~ao de luz. \cite{MONTE:2011}
+A medi\c{c}\~ao da press\~ao arterial, sist\'olica (SBP) e diast\'olica (DBP), \'e avaliada mecanicamente pela diferen\c{c}a de press\~ao entre um agente externo (o manguito apertando o bra\c{c}o) e a press\~ao dos vasos sangu\'ineos, desta forma \'e feita uma estimativa pela compara\c{c}\~ao das press\~oes. Uma alternativa para medi\c{c}\~ao da press\~ao \'e usar um dispositivo n\~ao invasivo com a fotoplestimografia (PPG) que pode realizar a leitura do batimento card\'iaco distal (forma do sinal com a medida dos capilares do dedo) pela difere\c{c}a de absor\c{c}\~ao de luz. \cite{MORENO:2011}
+
+Estudos de novos dispositivos vest\'iveis (\textit{wearable}) s\~ao desenvolvidos com o objetivo de melhorar a qualidade do sinal PPG e explorar seu potencial para realizar medi\c{c}\~oes como batimento card\'iaco, propriedades vasculares perif\'ericas, press\~ao arterial e atividades nervosas aut\^onomas.\cite{GEUN:2008} 
+
+T\'ecnicas para estima\c{c}\~ao da press\~ao sangu\'inea \'optica batida-a-batida usando somente o sinal PPG das pontas dos dedos. As caracter\'isticas card\'iacas como amplitude e fase s\~ao extra\'idas da transformada r\'apida de Fourier (FFT). Os componentes extra\'idos da PPG ser\~ao entrada para uma rede neural artificial que far\'a a estimativa da press\~ao sangu\'inea.\cite{XING:2016}
+
+Os fatores fisiol\'ogicos que justificam a estima\c{c}\~ao da press\~ao arterial atrav\'es dos sinais de PPG s~ao descritos: pela viscosidade do sangue, paredes arteriais, hemodin\^amica, a s\'indrome metab\'olica, a idade, \'indice de massa corporal, a respira\c{c}\~ao e o sistema nervoso central. \cite{MORENO:2011}
+
+
+M\'etodos de aprendizado de m\'aquinas (ML) tem sido propostos para estima\c{c}\~ao da press\~ao arterial de forma cont\'inua e n\~ao invasiva atrav\'es do sinal PPG. 
+Alguns m\'etodos de ML foram testados por Enric em \cite{MORENO:2011} que utilizou como crit\'erio de sele\c{c}\~ao o coeficiente de determina\c{c}\~ao $R^2$ e para melhorar a performance do treinamento valida\c{c}\~ao cruzada. 
+Na regress\~ao linear (LR) utilizou o algoritmo de \textit{ridge regression} para minimizar a soma dos quadrados dos res\'iduos (RSS) e a variabilidade dos atributos com performance $R^2_{SBP} = 0.59$ e $R^2_{DBP} = 0.53$, que corresponde respectivamente a press\~ao arterial sist\'olica e diast\'olica.
+A rede neural utilizada foi o perceptron de m\'ultiplas camadas (MLP) com 10 neur\^onios na camada escondida e 3 neur\^onios na camada de sa\'ida que representa o n\'ivel de glicose no sangue (BGL), SBP e DBP, com a performance de $R^2_{SBP} = 0.65$ e $R^2_{DBP} = 0.63$.  A SVM (\textit{Support Vector Machine}) com regress\~ao com fun\c{c}\~ao de perda $\epsilon$-insensitiva e 
+o \textit{kernel} Gaussiano, com performance $R^2_{SBP} = 0.72$ e $R^2_{DBP} = 0.68$. Com \textit{Random Forest} onde a sa\'ida do sistema \'e uma agrega\c{c}\~ao das sa\'ida das \'arvores no treinamento foi utilizado \textit{bootstrapping} e a sele\c{c}\~ao aleat\'oria de caracter\'isticas do teste em cada n\'o, a performance foi de $R^2_{SBP} = 0.90$ e $R^2_{DBP} = 0.86$. O m\'etodo de melhor performance e estabilidade em rela\c{c}\~ao a altera\c{c}\~ao dos dados foi \textit{Random Forest}, apresenta 
+
 
 
 \subsection{Motiva\c{c}\~ao}
@@ -414,11 +428,14 @@ A medi\c{c}\~ao da press\~ao arterial, sist\'olica e diast\'olica, \'e avaliada 
 \section{Revis\~ao bibliogr\'afica}
 
 \subsection{Fotoplestimografia}
-Fotoplestimografia (PPG) \'e um m\'etodo n\~ao invasivo de detec\c{c}\~ao do pulso de onda cardiovascular que propaga no corpo. A onda cardiovascular \'e estimulada pela contra\c{c}\~ao card\'iaca detectada nos membros perif\'ericos atrav\'es de uma fonte de luz e um detector. O PPG tem sido usado para medi\c{c}\~ao de batimentos card\'iacos, propriedades vasculares perif\'ericas, press\~ao arterial e atividades nervosas aut\^onomas. \cite{GEUN:2008}
-
-Uma grande limita\c{c}\~ao pr\'atica \'e o registro de baixo n\'ivel de PPG registrados em \'areas vasculares de baixa densidade da pele.
+Fotoplestimografia (PPG) \'e um m\'etodo n\~ao invasivo de detec\c{c}\~ao do pulso de onda cardiovascular que propaga no corpo. A onda cardiovascular \'e estimulada pela contra\c{c}\~ao card\'iaca detectada nos membros perif\'ericos atrav\'es de uma fonte de luz e um detector. \cite{GEUN:2008}
+%O PPG tem sido usado para medi\c{c}\~ao de batimentos card\'iacos, propriedades vasculares perif\'ericas, press\~ao arterial e atividades nervosas aut\^onomas. \cite{GEUN:2008}
+%Uma grande limita\c{c}\~ao pr\'atica \'e o registro de baixo n\'ivel de PPG registrados em \'areas vasculares de baixa densidade da pele.\\
+O sinal PPG \'e obtido pela ilumina\c{c}\~ao da pele e a medi\c{c}\~ao das mudan\c{c}as de absor\c{c}\~ao da luz. A caracter\'istica de interesse consiste em uma faixa de luz vermelha  e uma faixa pr\'oxima a banda infravermelha. A diferen\c{c}a entre a m\'inima absor\c{c}\~ao depende do batimento card\'iaco porque os vasos sangu\'ineos nos dedos expande e contrai com cada batimento. A diferen\c{c}a entre a absor\c{c}\~ao m\'inima e o pico de absor\c{c}\~ao da intensidade luminiosa \'e proporcional ao pulso distal card\'iaco.\cite{MORENO:2011}
 
 \subsection{T\'ecnicas de aprendizado de m\'aquina}
+
+
 
 
 \section{Metodologia proposta}

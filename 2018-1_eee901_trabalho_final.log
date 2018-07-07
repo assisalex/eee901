@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.16)  5 JUL 2018 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.16)  7 JUL 2018 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -311,10 +311,27 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.05249> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 382.
 
-(./2018-1_eee901_trabalho_final.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1917) in paragraph at lines 411--412
+[]\OT1/ptm/m/n/10.03749 Estudos de novos dis-pos-i-tivos vest[]^^Pveis (\OT1/pt
+m/m/it/10.03749 wear-able\OT1/ptm/m/n/10.03749 )
+ []
 
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 41
+9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 419.
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
+LaTeX Font Info:    Try loading font information for U+msb on input line 419.
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(./2018-1_eee901_trabalho_final.bbl [1{/usr/local/texlive/2018basic/texmf-var/f
+onts/map/pdftex/updmap/pdftex.map}
+
+
+])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -326,30 +343,32 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{/usr/local/texlive/2018basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[2
 
-
-]
-(./2018-1_eee901_trabalho_final.aux) )
-(\end occurred when \iftrue on line 437 was incomplete) 
+] (./2018-1_eee901_trabalho_final.aux) )
+(\end occurred when \iftrue on line 457 was incomplete) 
 Here is how much of TeX's memory you used:
- 3293 strings out of 494091
- 50385 string characters out of 6163523
- 115643 words of memory out of 5000000
- 6937 multiletter control sequences out of 15000+600000
- 36236 words of font info for 66 fonts, out of 8000000 for 9000
+ 3337 strings out of 494091
+ 51194 string characters out of 6163523
+ 124652 words of memory out of 5000000
+ 6967 multiletter control sequences out of 15000+600000
+ 39295 words of font info for 76 fonts, out of 8000000 for 9000
  322 hyphenation exceptions out of 8191
- 41i,10n,27p,501b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,27p,650b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018
 basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018basic/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018basic/texmf-dis
-t/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018basic/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018basic/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on 2018-1_eee901_trabalho_final.pdf (1 page, 52513 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018basic/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018bas
+ic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018
+basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+18basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018bas
+ic/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018basic/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018basic/texmf-
+dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on 2018-1_eee901_trabalho_final.pdf (2 pages, 92969 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
+ 44 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

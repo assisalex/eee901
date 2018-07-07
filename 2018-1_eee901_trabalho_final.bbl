@@ -21,8 +21,23 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{KISHORE:2008}
+D.~J. V.~A. Kishore, Sandeep P;~Heller, ``Beyond hypertension: integrated
+  cardiovascular care as a path to comprehensive primary care.'' \emph{Bulletin
+  of the World Health Organization}, 2018.
+
+\bibitem{MORENO:2011}
+E.~Monte-Moreno, ``Non-invasive estimate of blood glucose and blood pressure
+  from a photoplethysmograph by means of machine learning techniques,''
+  \emph{Artificial Intelligence in Medicine}, 2011.
+
 \bibitem{GEUN:2008}
 K.~C.~N. Eun~Geun, Hyun~Heo and Y.~Huh, ``Measurement site and applied pressure
   consideration in wrist photoplethysmography.''
+
+\bibitem{XING:2016}
+M.~Xing, Xiaoman;~Sun, ``Optical blood pressure estimation with
+  photoplethysmography and fft-based neural networks,'' \emph{Biomedical Optics
+  Express}, vol.~7, 2007.
 
 \end{thebibliography}

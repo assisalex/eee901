@@ -312,7 +312,8 @@
 \usepackage{enumerate} % Alterar o índice do enumerate
 \usepackage{cite}
 
-
+\usepackage{amsmath, amsthm}
+\newcommand{\dd}{\mathrm{d}} %differential for integrals
 
 
 % *** Do not adjust lengths that control margins, column widths, etc. ***
@@ -334,7 +335,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Utiliza\c{c}\~ao de t\'ecnicas de intelig\^encia computacional para estimar a press\~ao arterial a partir da fotoplestimografia.}
+\title{Utiliza\c{c}\~ao de t\'ecnicas de intelig\^encia computacional para estimar a press\~ao arterial a partir da fotopletismografia.}
 
 
 % author names and affiliations
@@ -385,7 +386,7 @@ Email: alancsouza04@gmail.com, assis.alex.d@gmail.com, tatudoug@gmail.com, rofes
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-
+O objetivo deste trabalho \'e aplicar t\'ecnicas de aprendizado de m\'aquinas para estimar a press\~ao arterial a partir da base de dados de fotopletismografia. \'E realizado o tratamento da base de dados com um filtro passa baixa de 50Hz e a transformada r\'apida de Fourier (FFT) para utilizar os dados na rede neural <COMPLETE AQUI>
 \end{abstract}
 
 % no keywords
@@ -404,26 +405,27 @@ Email: alancsouza04@gmail.com, assis.alex.d@gmail.com, tatudoug@gmail.com, rofes
 
 \section{Introdu\c{c}\~{a}o}
 % no \IEEEPARstart 
-A eleva\c{c}\~ao da press\~ao arterial (PA) \'e um dos fatores de risco para as doen\c{c}as cardiovasculares que \'e a principal causa de morte mundial. A falta de informa\c{c}\~ao e assist\^encia para identificar as altera\c{c}\~oes da press\~ao arterial impede o diagn\'ostico dos fatores de risco e o in\'icio do tratamento. \'E relatado que metade dos casos de morte por hipertens\~ao poderia ser revertido atrav\'es de tratamento com antihipertensivos, quando identificada precosemente. \cite{KISHORE:2008}
+A eleva\c{c}\~ao da press\~ao arterial (PA) \'e um dos fatores de risco para as doen\c{c}as cardiovasculares que \'e a principal causa de morte mundial. A falta de informa\c{c}\~ao e assist\^encia para identificar as altera\c{c}\~oes da PA impede o diagn\'ostico dos fatores de risco e o in\'icio do tratamento. \'E relatado que metade dos casos de morte por hipertens\~ao poderia ser revertido atrav\'es de tratamento com antihipertensivos, quando identificada precosemente. \cite{KISHORE:2008}
 
-A medi\c{c}\~ao da press\~ao arterial, sist\'olica (SBP) e diast\'olica (DBP), \'e avaliada mecanicamente pela diferen\c{c}a de press\~ao entre um agente externo (o manguito apertando o bra\c{c}o) e a press\~ao dos vasos sangu\'ineos, desta forma \'e feita uma estimativa pela compara\c{c}\~ao das press\~oes. Uma alternativa para medi\c{c}\~ao da press\~ao \'e usar um dispositivo n\~ao invasivo com a fotoplestimografia (PPG) que pode realizar a leitura do batimento card\'iaco distal (forma do sinal com a medida dos capilares do dedo) pela difere\c{c}a de absor\c{c}\~ao de luz. \cite{MORENO:2011}
+A medi\c{c}\~ao da press\~ao arterial, sist\'olica (SBP) e diast\'olica (DBP), \'e avaliada mecanicamente pela diferen\c{c}a de press\~ao entre um agente externo (o manguito apertando o bra\c{c}o) e a press\~ao dos vasos sangu\'ineos, desta forma \'e feita uma estimativa pela compara\c{c}\~ao das press\~oes. Uma alternativa para medi\c{c}\~ao da press\~ao \'e usar um dispositivo n\~ao invasivo com a fotopletismografia (PPG) que pode realizar a leitura do batimento card\'iaco distal (forma do sinal com a medida dos capilares do dedo) pela difere\c{c}a de absor\c{c}\~ao de luz. \cite{MORENO:2011}
 
-Estudos de novos dispositivos vest\'iveis (\textit{wearable}) s\~ao desenvolvidos com o objetivo de melhorar a qualidade do sinal PPG e explorar seu potencial para realizar medi\c{c}\~oes como batimento card\'iaco, propriedades vasculares perif\'ericas, press\~ao arterial e atividades nervosas aut\^onomas.\cite{GEUN:2008} 
+Estudos de novos dispositivos vest\'iveis (\textit{wearable}) s\~ao desenvolvidos com o objetivo de melhorar a qualidade do sinal PPG e explorar seu potencial para realizar medi\c{c}\~oes do batimento card\'iaco, propriedades vasculares perif\'ericas, press\~ao arterial e atividades nervosas aut\^onomas \cite{GEUN:2008}.
 
-T\'ecnicas para estima\c{c}\~ao da press\~ao sangu\'inea \'optica batida-a-batida usando somente o sinal PPG das pontas dos dedos. As caracter\'isticas card\'iacas como amplitude e fase s\~ao extra\'idas da transformada r\'apida de Fourier (FFT). Os componentes extra\'idos da PPG ser\~ao entrada para uma rede neural artificial que far\'a a estimativa da press\~ao sangu\'inea.\cite{XING:2016}
+T\'ecnicas para estima\c{c}\~ao da press\~ao sangu\'inea \'optica batida-a-batida usando somente o sinal PPG das pontas dos dedos. As caracter\'isticas card\'iacas como amplitude e fase s\~ao extra\'idas da transformada r\'apida de Fourier (FFT). Os componentes extra\'idos da PPG ser\~ao entrada para uma rede neural artificial que far\'a a estimativa da press\~ao sangu\'inea \cite{XING:2016}.
 
-Os fatores fisiol\'ogicos que justificam a estima\c{c}\~ao da press\~ao arterial atrav\'es dos sinais de PPG s~ao descritos: pela viscosidade do sangue, paredes arteriais, hemodin\^amica, a s\'indrome metab\'olica, a idade, \'indice de massa corporal, a respira\c{c}\~ao e o sistema nervoso central. \cite{MORENO:2011}
+Os fatores fisiol\'ogicos que justificam a estima\c{c}\~ao da press\~ao arterial atrav\'es dos sinais de PPG s\~ao descritos pela viscosidade do sangue, parede arterial, hemodin\^amica, s\'indrome metab\'olica, a idade, \'indice de massa corporal, a respira\c{c}\~ao e o sistema nervoso central. \cite{MORENO:2011}
 
 
 M\'etodos de aprendizado de m\'aquinas (ML) tem sido propostos para estima\c{c}\~ao da press\~ao arterial de forma cont\'inua e n\~ao invasiva atrav\'es do sinal PPG. 
-Alguns m\'etodos de ML foram testados por Enric em \cite{MORENO:2011} que utilizou como crit\'erio de sele\c{c}\~ao o coeficiente de determina\c{c}\~ao $R^2$ e para melhorar a performance do treinamento valida\c{c}\~ao cruzada. 
+Alguns m\'etodos de ML foram testados por Enric em \cite{MORENO:2011} que utilizou como crit\'erio de sele\c{c}\~ao o coeficiente de determina\c{c}\~ao $R^2$ e para melhorar a performance do treinamento usou a valida\c{c}\~ao cruzada. 
 Na regress\~ao linear (LR) utilizou o algoritmo de \textit{ridge regression} para minimizar a soma dos quadrados dos res\'iduos (RSS) e a variabilidade dos atributos com performance $R^2_{SBP} = 0.59$ e $R^2_{DBP} = 0.53$, que corresponde respectivamente a press\~ao arterial sist\'olica e diast\'olica.
-A rede neural utilizada foi o perceptron de m\'ultiplas camadas (MLP) com 10 neur\^onios na camada escondida e 3 neur\^onios na camada de sa\'ida que representa o n\'ivel de glicose no sangue (BGL), SBP e DBP, com a performance de $R^2_{SBP} = 0.65$ e $R^2_{DBP} = 0.63$.  A SVM (\textit{Support Vector Machine}) com regress\~ao com fun\c{c}\~ao de perda $\epsilon$-insensitiva e 
-o \textit{kernel} Gaussiano, com performance $R^2_{SBP} = 0.72$ e $R^2_{DBP} = 0.68$. Com \textit{Random Forest} onde a sa\'ida do sistema \'e uma agrega\c{c}\~ao das sa\'ida das \'arvores no treinamento foi utilizado \textit{bootstrapping} e a sele\c{c}\~ao aleat\'oria de caracter\'isticas do teste em cada n\'o, a performance foi de $R^2_{SBP} = 0.90$ e $R^2_{DBP} = 0.86$. O m\'etodo de melhor performance e estabilidade em rela\c{c}\~ao a altera\c{c}\~ao dos dados foi \textit{Random Forest}, apresenta 
-
+A rede neural utilizada foi o perceptron de m\'ultiplas camadas (MLP) com 10 neur\^onios na camada escondida e 3 neur\^onios na camada de sa\'ida que representa o n\'ivel de glicose no sangue (BGL), SBP e DBP, com a performance de $R^2_{SBP} = 0.65$ e $R^2_{DBP} = 0.63$.  A SVM (\textit{Support Vector Machine}) com regress\~ao, fun\c{c}\~ao de perda $\epsilon$-insensitiva e 
+o \textit{kernel} Gaussiano, com performance $R^2_{SBP} = 0.72$ e $R^2_{DBP} = 0.68$. Com \textit{Random Forest} onde a sa\'ida do sistema \'e uma agrega\c{c}\~ao das sa\'ida das \'arvores no treinamento foi utilizado \textit{bootstrapping} e a sele\c{c}\~ao aleat\'oria de caracter\'isticas do teste em cada n\'o, a performance foi de $R^2_{SBP} = 0.90$ e $R^2_{DBP} = 0.86$. O m\'etodo de melhor performance e estabilidade em rela\c{c}\~ao a altera\c{c}\~ao dos dados foi \textit{Random Forest}.
 
 
 \subsection{Motiva\c{c}\~ao}
+Segundo a Organiza\c{c}\~ao Mundial de Sa\'ude \cite{WHO:2018} 17.9 milh\~oes de pessoas morreram em 2016 por doen\c{c}as cadiovascular. O desenvolvimento de t\'ecnicas e dispositivos capazes de monitorar fatores de riscos, como a press\~ao arterial, para auxiliar no diagn\'ostico precose de poss\'iveis anormalidades. As redes neurais artificias mostram se capazes de realizar boas aproxima\c{c}\~oes da press\~ao arterial atrav\'es da an\'alise dos sinais de PPG. Para o bom desempenho da rede \'e necess\'arios extrair e tratar as informa\c{c}\~oes da PPG.
+
 
 \section{Revis\~ao bibliogr\'afica}
 
@@ -434,7 +436,66 @@ Fotoplestimografia (PPG) \'e um m\'etodo n\~ao invasivo de detec\c{c}\~ao do pul
 O sinal PPG \'e obtido pela ilumina\c{c}\~ao da pele e a medi\c{c}\~ao das mudan\c{c}as de absor\c{c}\~ao da luz. A caracter\'istica de interesse consiste em uma faixa de luz vermelha  e uma faixa pr\'oxima a banda infravermelha. A diferen\c{c}a entre a m\'inima absor\c{c}\~ao depende do batimento card\'iaco porque os vasos sangu\'ineos nos dedos expande e contrai com cada batimento. A diferen\c{c}a entre a absor\c{c}\~ao m\'inima e o pico de absor\c{c}\~ao da intensidade luminiosa \'e proporcional ao pulso distal card\'iaco.\cite{MORENO:2011}
 
 \subsection{T\'ecnicas de aprendizado de m\'aquina}
+Problemas de aprendizado supervisionado são divididos em dois grupos: regressão e classificação. Dadas as características do problema de obtenção dos valores de pressão sanguínea, cujo objetivo é encontrar um valor real a partir dos dados disponíveis, o mesmo pode ser identificado como um problema de regressão.
 
+Para alguns problemas mais complexos, ou dos quais dispõem de maior facilidade para coleta de dados em larga escala, comumente se aplicam modelos baseados em redes neurais de camadas profundas (\textit{Deep Learning}) \cite{lecun2015deep}. Dentre esses modelos, destacam-se redes neurais recorrentes \cite{mikolov2010recurrent} e modelos baseados em redes neurais convolucionais.
+
+As redes neurais convolucionais (RNC), cuja arquitetura fora inicialmente proposta por \cite{lecun1998gradient}, são redes neurais que usam a convolução no lugar da simples multiplicação de matrizes em pelo menos uma de suas camadas. As RNCs são especializadas em processamento de dados que possuem uma topologia em grade, como dados de séries temporais (grade 1D) e dados de imagem (grade 2D) \cite{goodfellow2016deep}. A convolução é uma operação entre duas funções, definida como: a integral do produto de uma das funções, por uma cópia deslocada e invertida da outra, como mostrado em \ref{eq1}:
+
+\begin{equation}\label{eq1}
+s(t) = (f * g)(t) = \int_{-\infty}^{\infty} f(\tau)g(t - \tau) d\tau
+\end{equation}
+
+\subsection{Transformada de Fourier}
+
+Para uma função $n$-dimensional $g(\vec x)$, podemos definir a Transformada Contínua de Fourier \cite{anandbrief}:
+
+\begin{equation}
+  \label{ft_continuous}
+  \hat{g}(\vec k) = \int \dd^nx g(\vec x)e^{-i\vec x\cdot \vec k}
+\end{equation}
+
+A transformada inversa de Fourier é definida por:
+
+%\begin{equation}
+%  \label{ift_continuous}
+%  g(\vec x) = \int \frac{\dd^nk}{(2\pi)^n} \hat{g}(\vec k)
+%  e^{i\vec k\cdot\vec x}.
+%\end{equation}
+
+%Entretanto, por questões de implementação computacional, considera-se a Transformada Discreta de Fourier. 
+%
+%Dado um elemento $n$-dimensional $G_{j_1,j_2\cdots j_n}$ escrito $G_\mathbf{j}$, onde $\mathbf j$ é um vetor $n$ dimensional de valores inteiros, com $0 \le j_i < N_i$.  Podemos definir então a soma:
+%
+%\begin{equation}
+%  \sum_{\mathbf{j}} \equiv
+%  \sum_{j_1=0}^{N_1-1}\sum_{j_2=0}^{N_2-1}\cdots\sum_{j_n=0}^{N_n-1}
+%\end{equation}
+%Através dessa notação, podemos escrever a Transformada discreta $n$-dimensional de Fourier como segue:
+%
+%\begin{equation}
+%  \label{ft_discrete}
+%  \hat{G}_{\mathbf{k}} 
+%  = \sum_{\mathbf{j}}
+%  G_{\mathbf{j}} e^{(-2\pi i/N)\mathbf{j}\cdot\mathbf{k}},\ 0\le k_m< N_m
+%\end{equation}
+%
+%E sua inversa correspondente, dada por:
+%
+%\begin{equation}
+%  \label{ift_discrete}
+%  G_{\mathbf{j}}
+%  = \left[\prod_m\frac{1}{\left(N_m\right)^n}\right]
+%  \sum_{\mathbf{k}}
+%  \hat{G}_{\mathbf{k}} e^{(2\pi i/N)\mathbf{j}\cdot\mathbf{k}},\ 0\le j_\ell< N_\ell
+%\end{equation}
+%
+%As expressões nas equações \ref{ft_discrete} e \ref{ift_discrete} podem ser implementadas de forma computacionalmente eficiente através da utilização da Transformada Rápida de Fourier (FTT).
+%
+%\subsection{Transformada Wavelet}
+%
+%A Transformada \textit{Wavelet} têm sido utilizada em diversas aplicações de processamento de sinais, dada sua habilidade de decompor o sinal em componentes de frequência espacialmente distribuídos os quais podem ser filtrados e selecionados de acordo com a necessidade. Dentre as aplicações destacam-se a redução de ruídos, compactação de dados e extração de características \cite{leavey2003introduction}. \textit{Wavelets} são funções matemáticas que apresentam comportamento oscilatório. Diferentemente das funções senoidais, cuja oscilação está presente em todo sinal, \textit{wavelets} apresentam oscilações localizadas e a análise de sinais através dessa transformada se dá pela da quebra do mesmo em diferentes componentes de frequência através da comparação do sinal com funções \textit{wavelet} de diversos tamanhos.
+ 
 
 
 

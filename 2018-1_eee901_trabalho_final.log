@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.16)  7 JUL 2018 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.16)  7 JUL 2018 23:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -218,21 +218,33 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks21
 )
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip47
+\thm@postskip=\skip48
+\thm@headsep=\skip49
+\dth@everypar=\toks27
+)
 (./2018-1_eee901_trabalho_final.aux)
 \openout1 = `2018-1_eee901_trabalho_final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
 
 -- Lines per column: 58 (exact).
 (/usr/local/texlive/2018basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -242,12 +254,12 @@ LaTeX Font Info:    ... okay on input line 329.
 \scratchbox=\box30
 \nofMPsegments=\count108
 \nofMParguments=\count109
-\everyMPshowfont=\toks22
+\everyMPshowfont=\toks28
 \MPscratchCnt=\count110
 \MPscratchDim=\dimen138
 \MPnumerator=\count111
 \makeMPintoPDFobject=\count112
-\everyMPtoPDFconversion=\toks23
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2018basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 (/usr/local/texlive/2018basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -303,35 +315,32 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 382.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 383.
 
  (/usr/local/texlive/2018basic/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.05249> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 382.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 383.
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 42
+0.
+LaTeX Font Info:    Try loading font information for U+msa on input line 420.
 
-Underfull \hbox (badness 1917) in paragraph at lines 411--412
-[]\OT1/ptm/m/n/10.03749 Estudos de novos dis-pos-i-tivos vest[]^^Pveis (\OT1/pt
-m/m/it/10.03749 wear-able\OT1/ptm/m/n/10.03749 )
- []
-
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 41
-9.
-LaTeX Font Info:    Try loading font information for U+msa on input line 419.
 (/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 419.
+LaTeX Font Info:    Try loading font information for U+msb on input line 420.
 
 (/usr/local/texlive/2018basic/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1{/usr/local/texlive/2018basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+(./2018-1_eee901_trabalho_final.bbl
+Underfull \vbox (badness 4254) has occurred while \output is active []
+
 )
-(./2018-1_eee901_trabalho_final.bbl [1{/usr/local/texlive/2018basic/texmf-var/f
-onts/map/pdftex/updmap/pdftex.map}
-
-
-])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -343,32 +352,33 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
-
-] (./2018-1_eee901_trabalho_final.aux) )
-(\end occurred when \iftrue on line 457 was incomplete) 
+[2] (./2018-1_eee901_trabalho_final.aux) )
+(\end occurred when \iftrue on line 518 was incomplete) 
 Here is how much of TeX's memory you used:
- 3337 strings out of 494091
- 51194 string characters out of 6163523
- 124652 words of memory out of 5000000
- 6967 multiletter control sequences out of 15000+600000
+ 3416 strings out of 494091
+ 52192 string characters out of 6163523
+ 125704 words of memory out of 5000000
+ 7042 multiletter control sequences out of 15000+600000
  39295 words of font info for 76 fonts, out of 8000000 for 9000
  322 hyphenation exceptions out of 8191
- 41i,10n,27p,650b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,27p,897b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018
 basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018basic/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018basic/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018bas
-ic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018
-basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
-18basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018bas
-ic/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018basic/t
-exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018basic/texmf-
-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 2018-1_eee901_trabalho_final.pdf (2 pages, 92969 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018basic/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018ba
+sic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/201
+8basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2018basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local
+/texlive/2018basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
+ive/2018basic/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/
+2018basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018b
+asic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on 2018-1_eee901_trabalho_final.pdf (2 pages, 126707 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
